@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.testplatform: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    com.testplatform.security: DEBUG
+    com.testplatform.controller: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/application.log
+    max-size: 10MB
+    max-history: 20
+
+jwt:
+  secret: your-secret-key
+  expiration: 86400000  # 24小时 
+
+# 热部署配置
+spring:
+  devtools:
+    restart:
+      enabled: true  # 启用热部署
+      additional-paths: src/main/java  # 监控的目录
+      exclude: static/**,public/**  # 排除的目录
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_platform?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 'tq752500'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+        javax.persistence.schema-generation.create-foreign-keys: false
+
+# 其他配置保持不变 

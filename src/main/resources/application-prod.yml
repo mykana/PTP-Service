@@ -1,0 +1,21 @@
+spring:
+  profiles:
+      active=prod:
+  datasource:
+    url: jdbc:mysql://mysql:3306/testplatform?useSSL=false
+    username: root
+    password: tq752500
+  
+  redis:
+    host: redis
+    port: 6379
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.testplatform: INFO
+  file:
+    name: /var/log/testplatform/app.log 

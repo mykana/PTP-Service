@@ -1,0 +1,509 @@
+2025-02-24 08:41:00 [restartedMain] INFO  c.t.TestPlatformApplication - Starting TestPlatformApplication using Java 11.0.12 on LAPTOP-HM2D1VP2 with PID 45012 (D:\PTP\PTP-Service\testplatform\target\classes started by lenovo in D:\PTP\PTP-Service\testplatform)
+2025-02-24 08:41:00 [restartedMain] DEBUG c.t.TestPlatformApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-02-24 08:41:00 [restartedMain] INFO  c.t.TestPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-24 08:41:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24 08:41:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.ModuleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.RequirementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.TestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserTestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 08:41:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-02-24 08:41:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-24 08:41:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-24 08:41:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-02-24 08:41:02 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-24 08:41:02 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2024 ms
+2025-02-24 08:41:02 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 08:41:02 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-02-24 08:41:02 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-02-24 08:41:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-24 08:41:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-24 08:41:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-24 08:41:03 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-24 08:41:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 08:41:04 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/**']
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/error']
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui/**']
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/v3/api-docs/**']
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**']
+2025-02-24 08:41:05 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@733e60eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f242539, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d9effb, org.springframework.security.web.header.HeaderWriterFilter@7b8e2c5b, org.springframework.web.filter.CorsFilter@3d4badf7, org.springframework.security.web.authentication.logout.LogoutFilter@367204ab, com.testplatform.security.JwtAuthenticationFilter@44c221f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b46e17d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1017876, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3eb01cf, org.springframework.security.web.session.SessionManagementFilter@10506bf3, org.springframework.security.web.access.ExceptionTranslationFilter@4913fded, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36687dc3]
+2025-02-24 08:41:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-24 08:41:05 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 26 mappings in 'requestMappingHandlerMapping'
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-24 08:41:05 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-24 08:41:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-24 08:41:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-24 08:41:05 [restartedMain] INFO  c.t.TestPlatformApplication - Started TestPlatformApplication in 5.821 seconds (JVM running for 8.17)
+2025-02-24 08:41:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 08:41:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-24 08:41:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-24 10:56:46 [restartedMain] INFO  c.t.TestPlatformApplication - Starting TestPlatformApplication using Java 11.0.12 on LAPTOP-HM2D1VP2 with PID 40004 (D:\PTP\PTP-Service\testplatform\target\classes started by lenovo in D:\PTP\PTP-Service\testplatform)
+2025-02-24 10:56:46 [restartedMain] DEBUG c.t.TestPlatformApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-02-24 10:56:46 [restartedMain] INFO  c.t.TestPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-24 10:56:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24 10:56:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24 10:56:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 10:56:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.ModuleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.RequirementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.TestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserTestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-24 10:56:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-24 10:56:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-02-24 10:56:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-24 10:56:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1715 ms
+2025-02-24 10:56:48 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 10:56:48 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-02-24 10:56:48 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-02-24 10:56:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-24 10:56:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-24 10:56:48 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-24 10:56:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-24 10:56:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 10:56:49 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/**']
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/error']
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui/**']
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/v3/api-docs/**']
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**']
+2025-02-24 10:56:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3926630e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@320a11ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@6796e356, org.springframework.security.web.header.HeaderWriterFilter@492908d8, org.springframework.web.filter.CorsFilter@1c01d149, org.springframework.security.web.authentication.logout.LogoutFilter@3ccab7a4, com.testplatform.security.JwtAuthenticationFilter@19373c6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f909fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c0a8d8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@643bf7c3, org.springframework.security.web.session.SessionManagementFilter@692c6fea, org.springframework.security.web.access.ExceptionTranslationFilter@3ef50142, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53587e1f]
+2025-02-24 10:56:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-24 10:56:50 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 26 mappings in 'requestMappingHandlerMapping'
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-24 10:56:50 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-24 10:56:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-24 10:56:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-24 10:56:51 [restartedMain] INFO  c.t.TestPlatformApplication - Started TestPlatformApplication in 5.56 seconds (JVM running for 8.514)
+2025-02-24 10:57:17 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-24 10:57:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@eab9ebe
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a9b9e77
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-24 10:57:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/cases?page=1&pageSize=10
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: GET /api/cases
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-1] WARN  c.t.security.JwtAuthenticationFilter - JWT token已过期: JWT expired at 2025-02-23T06:01:28Z. Current time: 2025-02-24T10:57:17Z, a difference of 104149814 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-02-24 10:57:17 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-2] WARN  c.t.security.JwtAuthenticationFilter - JWT token已过期: JWT expired at 2025-02-23T06:01:28Z. Current time: 2025-02-24T10:57:17Z, a difference of 104149847 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-02-24 10:57:17 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwMjYxNjg4LCJpYXQiOjE3NDAxNzUyODh9.CDchGZPtUr2DvhUZUSm2ZCuQHRututfLg6HAE1jTuT9Y9nM_ZEjS1X9Kyu0lEzbV55F_jmMTTW1b7W0r2BJKgw
+2025-02-24 10:57:17 [http-nio-8080-exec-3] WARN  c.t.security.JwtAuthenticationFilter - JWT token已过期: JWT expired at 2025-02-23T06:01:28Z. Current time: 2025-02-24T10:57:17Z, a difference of 104149879 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-02-24 10:57:17 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: null
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: null
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /api/auth/logout] with attributes [permitAll]
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/logout
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/logout", parameters={}
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#logout(String)
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.web.method.HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.testplatform.common.Result<java.lang.Void>> com.testplatform.controller.AuthController.logout(java.lang.String): Required request header 'Authorization' for method parameter type String is not present
+2025-02-24 10:57:17 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 10:57:17 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Feb 24 10:57:17 CST 2025, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+2025-02-24 10:57:18 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2025-02-24 10:57:18 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: null
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: null
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /api/auth/login] with attributes [permitAll]
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#login(LoginRequest)
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/auth/login
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - HTTP Method : POST
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.AuthController.login
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 10:57:19 [http-nio-8080-exec-5] INFO  com.testplatform.aspect.LogAspect - Request Args: [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG c.t.controller.AuthController - 尝试登录用户: admin_user
+2025-02-24 10:57:19 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:23 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Feb 24 10:57:23 CST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-02-24 10:57:23 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: null
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: null
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /api/auth/login] with attributes [permitAll]
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#login(LoginRequest)
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/auth/login
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - HTTP Method : POST
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.AuthController.login
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 10:57:42 [http-nio-8080-exec-6] INFO  com.testplatform.aspect.LogAspect - Request Args: [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG c.t.controller.AuthController - 尝试登录用户: admin_user
+2025-02-24 10:57:42 [http-nio-8080-exec-6] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:44 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Feb 24 10:57:44 CST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-02-24 10:57:44 [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: null
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: null
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /api/auth/login] with attributes [permitAll]
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#login(LoginRequest)
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/auth/login
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - HTTP Method : POST
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.AuthController.login
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 10:57:51 [http-nio-8080-exec-7] INFO  com.testplatform.aspect.LogAspect - Request Args: [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG c.t.controller.AuthController - 尝试登录用户: admin_user
+2025-02-24 10:57:51 [http-nio-8080-exec-7] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 10:57:53 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Feb 24 10:57:53 CST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-02-24 10:57:53 [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: null
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: null
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /api/auth/login] with attributes [permitAll]
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#login(LoginRequest)
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/auth/login
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - HTTP Method : POST
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.AuthController.login
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - Request Args: [LoginRequest(username=admin_user, password=123456789)]
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG c.t.controller.AuthController - 尝试登录用户: admin_user
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - Response    : {"headers":{},"body":{"code":200,"message":"success","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA","userInfo":{"id":1,"username":"admin_user","realName":"张三","role":"admin"}}},"statusCodeValue":200,"statusCode":"OK"}
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - Time Cost   : 121 ms
+2025-02-24 11:00:42 [http-nio-8080-exec-8] INFO  com.testplatform.aspect.LogAspect - ===================请求结束===================
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Result(code=200, message=success, data=LoginResponse(token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91 (truncated)...]
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-02-24 11:00:42 [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/info
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: GET /api/auth/info
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:42 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Username from JWT: admin_user
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Loaded UserDetails: org.springframework.security.core.userdetails.User [Username=admin_user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_admin]]
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG c.t.security.JwtAuthenticationFilter - Authentication set in SecurityContext
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /api/auth/info] with attributes [permitAll]
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/info
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/info", parameters={}
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.AuthController#getUserInfo(String)
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/auth/info
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - HTTP Method : GET
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.AuthController.getUserInfo
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - Request Args: [Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA]
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - Response    : {"headers":{},"body":{"code":200,"message":"success","data":{"id":1,"username":"admin_user","realName":"张三","role":"admin"}},"statusCodeValue":200,"statusCode":"OK"}
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - Time Cost   : 5 ms
+2025-02-24 11:00:43 [http-nio-8080-exec-10] INFO  com.testplatform.aspect.LogAspect - ===================请求结束===================
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Result(code=200, message=success, data=LoginResponse.UserInfo(id=1, username=admin_user, realName=张三 (truncated)...]
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-02-24 11:00:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/cases?page=1&pageSize=10
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: GET /api/cases
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Username from JWT: admin_user
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Loaded UserDetails: org.springframework.security.core.userdetails.User [Username=admin_user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_admin]]
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG c.t.security.JwtAuthenticationFilter - Authentication set in SecurityContext
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /api/cases?page=1&pageSize=10] with attributes [permitAll]
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/cases?page=1&pageSize=10
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cases?page=1&pageSize=10", parameters={masked}
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.TestCaseController#getTestCases(TestCaseQueryRequest)
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/cases
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - HTTP Method : GET
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.TestCaseController.getTestCases
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - Request Args: [TestCaseQueryRequest(page=1, pageSize=10, title=null, priority=null, status=null, dateRange=null, userId=null, creatorName=null, requirementIds=null)]
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  c.t.controller.TestCaseController - 接收到查询测试用例请求: TestCaseQueryRequest(page=1, pageSize=10, title=null, priority=null, status=null, dateRange=null, userId=null, creatorName=null, requirementIds=null)
+2025-02-24 11:00:45 [http-nio-8080-exec-9] WARN  o.h.h.i.ast.QueryTranslatorImpl - HHH000104: firstResult/maxResults specified with collection fetch; applying in memory!
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  c.t.controller.TestCaseController - 查询到4条测试用例
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - Response    : {"headers":{},"body":{"code":200,"message":"success","data":{"total":4,"pageSize":10,"page":1,"list":[{"id":9,"title":"测试del","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"测试del\",\"expectation\":\"测试del\"}]","precondition":"测试del","creatorName":"张三","createdAt":"2025-02-22T06:04:47","updatedAt":"2025-02-22T06:04:47","requirements":[{"id":3,"reqCode":"REQ202502140003","reqName":"测试数据"}]},{"id":3,"title":"注册测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"注册测试用例1\",\"expectation\":\"注册测试用例\"},{\"operation\":\"注册测试用例2\",\"expectation\":\"注册测试用例\"}]","precondition":"注册测试用例","creatorName":"张三","createdAt":"2025-02-15T05:41:14","updatedAt":"2025-02-15T05:53:55","requirements":[{"id":1,"reqCode":"REQ202502140001","reqName":"测试"}]},{"id":2,"title":"汤齐登录测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"登录\",\"expectation\":\"成功\"}]","precondition":"汤齐登录测试用例","creatorName":"张三","createdAt":"2025-02-15T05:40:33","updatedAt":"2025-02-15T05:52:30","requirements":[{"id":2,"reqCode":"REQ202502140002","reqName":"测试3"}]},{"id":1,"title":"测试测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"测试测试用例\",\"expectation\":\"测试测试用例\"}]","precondition":"测试测试用例","creatorName":"张三","createdAt":"2025-02-15T03:10:00","updatedAt":"2025-02-15T03:10:00","requirements":[{"id":3,"reqCode":"REQ202502140003","reqName":"测试数据"}]}]}},"statusCodeValue":200,"statusCode":"OK"}
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - Time Cost   : 111 ms
+2025-02-24 11:00:45 [http-nio-8080-exec-9] INFO  com.testplatform.aspect.LogAspect - ===================请求结束===================
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Result(code=200, message=success, data={total=4, pageSize=10, page=1, list=[TestCaseDTO(id=9, title= (truncated)...]
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-02-24 11:00:45 [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/cases/9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: DELETE /api/cases/9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Username from JWT: admin_user
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Loaded UserDetails: org.springframework.security.core.userdetails.User [Username=admin_user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_admin]]
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG c.t.security.JwtAuthenticationFilter - Authentication set in SecurityContext
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [DELETE /api/cases/9] with attributes [permitAll]
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/cases/9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/cases/9", parameters={}
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.TestCaseController#deleteTestCase(Integer)
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/cases/9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - HTTP Method : DELETE
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.TestCaseController.deleteTestCase
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - Request Args: [9]
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  c.t.controller.TestCaseController - 接收到删除测试用例请求: id=9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  c.t.service.TestCaseService - 测试用例删除成功: 9
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - Response    : {"headers":{},"body":{"code":200,"message":"success","data":null},"statusCodeValue":200,"statusCode":"OK"}
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - Time Cost   : 48 ms
+2025-02-24 11:00:48 [http-nio-8080-exec-1] INFO  com.testplatform.aspect.LogAspect - ===================请求结束===================
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Result(code=200, message=success, data=null)]
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-02-24 11:00:48 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/cases?page=1&pageSize=10
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Processing request: GET /api/cases
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Authorization header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Received JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl91c2VyIiwiZXhwIjoxNzQwNDUyNDQyLCJpYXQiOjE3NDAzNjYwNDJ9.yaJxdnxf5sklhWIZ4816JaPga0n9z6BimWTCpgYdTyOZAnvhjKoTdNRmr0hB5y0KNbOlhGOQmsGg2CoHkeptmA
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Username from JWT: admin_user
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Loaded UserDetails: org.springframework.security.core.userdetails.User [Username=admin_user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_admin]]
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG c.t.security.JwtAuthenticationFilter - Authentication set in SecurityContext
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /api/cases?page=1&pageSize=10] with attributes [permitAll]
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/cases?page=1&pageSize=10
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cases?page=1&pageSize=10", parameters={masked}
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.testplatform.controller.TestCaseController#getTestCases(TestCaseQueryRequest)
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - ===================请求开始===================
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - URL         : http://localhost:8080/api/cases
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - HTTP Method : GET
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - Class Method: com.testplatform.controller.TestCaseController.getTestCases
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - IP         : 0:0:0:0:0:0:0:1
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - Request Args: [TestCaseQueryRequest(page=1, pageSize=10, title=null, priority=null, status=null, dateRange=null, userId=null, creatorName=null, requirementIds=null)]
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  c.t.controller.TestCaseController - 接收到查询测试用例请求: TestCaseQueryRequest(page=1, pageSize=10, title=null, priority=null, status=null, dateRange=null, userId=null, creatorName=null, requirementIds=null)
+2025-02-24 11:00:48 [http-nio-8080-exec-2] WARN  o.h.h.i.ast.QueryTranslatorImpl - HHH000104: firstResult/maxResults specified with collection fetch; applying in memory!
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  c.t.controller.TestCaseController - 查询到3条测试用例
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - Response    : {"headers":{},"body":{"code":200,"message":"success","data":{"total":3,"pageSize":10,"page":1,"list":[{"id":3,"title":"注册测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"注册测试用例1\",\"expectation\":\"注册测试用例\"},{\"operation\":\"注册测试用例2\",\"expectation\":\"注册测试用例\"}]","precondition":"注册测试用例","creatorName":"张三","createdAt":"2025-02-15T05:41:14","updatedAt":"2025-02-15T05:53:55","requirements":[{"id":1,"reqCode":"REQ202502140001","reqName":"测试"}]},{"id":2,"title":"汤齐登录测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"登录\",\"expectation\":\"成功\"}]","precondition":"汤齐登录测试用例","creatorName":"张三","createdAt":"2025-02-15T05:40:33","updatedAt":"2025-02-15T05:52:30","requirements":[{"id":2,"reqCode":"REQ202502140002","reqName":"测试3"}]},{"id":1,"title":"测试测试用例","priority":"P1","status":"编写_评审中","caseDetail":"[{\"operation\":\"测试测试用例\",\"expectation\":\"测试测试用例\"}]","precondition":"测试测试用例","creatorName":"张三","createdAt":"2025-02-15T03:10:00","updatedAt":"2025-02-15T03:10:00","requirements":[{"id":3,"reqCode":"REQ202502140003","reqName":"测试数据"}]}]}},"statusCodeValue":200,"statusCode":"OK"}
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - Time Cost   : 8 ms
+2025-02-24 11:00:48 [http-nio-8080-exec-2] INFO  com.testplatform.aspect.LogAspect - ===================请求结束===================
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Result(code=200, message=success, data={total=3, pageSize=10, page=1, list=[TestCaseDTO(id=3, title= (truncated)...]
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-02-24 11:00:48 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-02-24 11:06:20 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 11:06:20 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-24 11:06:20 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-24 11:06:21 [restartedMain] INFO  c.t.TestPlatformApplication - Starting TestPlatformApplication using Java 11.0.12 on LAPTOP-HM2D1VP2 with PID 40004 (D:\PTP\PTP-Service\testplatform\target\classes started by lenovo in D:\PTP\PTP-Service\testplatform)
+2025-02-24 11:06:21 [restartedMain] DEBUG c.t.TestPlatformApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-02-24 11:06:21 [restartedMain] INFO  c.t.TestPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.ModuleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.RequirementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.TestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserTestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-24 11:06:21 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-24 11:06:21 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-02-24 11:06:21 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 391 ms
+2025-02-24 11:06:21 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 11:06:21 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-02-24 11:06:21 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-02-24 11:06:21 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-24 11:06:21 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 11:06:21 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/**']
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/error']
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui/**']
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/v3/api-docs/**']
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**']
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29361142, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@416005ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@233986ec, org.springframework.security.web.header.HeaderWriterFilter@4f9d1034, org.springframework.web.filter.CorsFilter@1744aa9e, org.springframework.security.web.authentication.logout.LogoutFilter@2678d1fe, com.testplatform.security.JwtAuthenticationFilter@15ace5a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3033ad7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1af99617, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a3cce78, org.springframework.security.web.session.SessionManagementFilter@249b4c1d, org.springframework.security.web.access.ExceptionTranslationFilter@585139ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52b9eb8d]
+2025-02-24 11:06:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-24 11:06:21 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 26 mappings in 'requestMappingHandlerMapping'
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-24 11:06:21 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-24 11:06:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-24 11:06:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-24 11:06:22 [restartedMain] INFO  c.t.TestPlatformApplication - Started TestPlatformApplication in 1.041 seconds (JVM running for 579.311)
+2025-02-24 11:06:22 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-24 11:06:24 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 11:06:24 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-02-24 11:06:24 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-02-24 11:06:24 [restartedMain] INFO  c.t.TestPlatformApplication - Starting TestPlatformApplication using Java 11.0.12 on LAPTOP-HM2D1VP2 with PID 40004 (D:\PTP\PTP-Service\testplatform\target\classes started by lenovo in D:\PTP\PTP-Service\testplatform)
+2025-02-24 11:06:24 [restartedMain] DEBUG c.t.TestPlatformApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-02-24 11:06:24 [restartedMain] INFO  c.t.TestPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.ModuleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.RequirementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.TestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.testplatform.repository.UserTestCaseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-02-24 11:06:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-24 11:06:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-24 11:06:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-02-24 11:06:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 415 ms
+2025-02-24 11:06:25 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 11:06:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-02-24 11:06:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-02-24 11:06:25 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-24 11:06:25 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 11:06:25 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/**']
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/error']
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui/**']
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/v3/api-docs/**']
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**']
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32113ac6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1eb14654, org.springframework.security.web.context.SecurityContextPersistenceFilter@33e0a611, org.springframework.security.web.header.HeaderWriterFilter@3a75f434, org.springframework.web.filter.CorsFilter@316c94a, org.springframework.security.web.authentication.logout.LogoutFilter@2f8d32e3, com.testplatform.security.JwtAuthenticationFilter@30d3f47f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@555c5150, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19ccf50a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@884f5a, org.springframework.security.web.session.SessionManagementFilter@4c265d9b, org.springframework.security.web.access.ExceptionTranslationFilter@4cfc74c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@110243f9]
+2025-02-24 11:06:25 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 26 mappings in 'requestMappingHandlerMapping'
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-24 11:06:25 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-24 11:06:25 [restartedMain] INFO  c.t.TestPlatformApplication - Started TestPlatformApplication in 1.134 seconds (JVM running for 583.023)
+2025-02-24 11:06:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-24 11:23:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 11:23:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-02-24 11:23:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
